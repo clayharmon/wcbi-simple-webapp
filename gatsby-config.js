@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "WCBI Simple WebApp",
-    siteUrl: "wcbi-webapp.pages.dev",
+    siteUrl: "https://wcbi-simple-webapp.pages.dev",
     author: "Clay Harmon",
   },
   plugins: [
@@ -30,13 +30,13 @@ module.exports = {
       options: {
         name: "WCBI Simple WebApp",
         short_name: "WCBI WebApp",
-        icon: "src/images/maskable-icon.png",
+        icon: "src/images/icon.png",
         icon_options: {
           purpose: "any maskable",
         },
         start_url: "/",
         lang: "en",
-        background_color: "#c0272d",
+        background_color: "#2149a5",
         theme_color: "#ffffff",
         display: "standalone",
       },
@@ -45,7 +45,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "${__dirname}/src/images",
+        path: `${__dirname}/src/images`,
       },
     },
   ],
